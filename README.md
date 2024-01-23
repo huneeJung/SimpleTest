@@ -1,2 +1,3 @@
-# Big O Notation Test For Repository
-### 시간복잡도 테스트를 위한 저장소
+# Time Complexity Test For Repository
+### 1. 멀티 쓰레드 , 비동기 처리를 테스트
+### 2. 시간복잡도 테스트
