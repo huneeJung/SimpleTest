@@ -1,3 +1,5 @@
+package ThreadTest;
+
 import java.time.Duration;
 import java.time.Instant;
 import java.util.concurrent.ExecutorService;
@@ -6,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 public class ThreadPoolTest {
-    private static final Logger LOG = Logger.getLogger("ThreadPoolTest");
+    private static final Logger LOG = Logger.getLogger("ThreadTest.ThreadPoolTest");
 
     public static void main(String[] args) throws InterruptedException {
         // 쓰레드 풀 처리
