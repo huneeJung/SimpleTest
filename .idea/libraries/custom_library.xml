@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="custom-library">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/custom-library.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
