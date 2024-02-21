@@ -1,7 +1,7 @@
 package RuntimeMemoryTest;
 
 public class RuntimeMemoryTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Runtime runtime = Runtime.getRuntime();
 
         var freeMemory = runtime.freeMemory(); // 사용 가능한 힙 메모리 총량 / 바이트 단위
@@ -11,5 +11,14 @@ public class RuntimeMemoryTest {
         System.out.println((double)maxMemory/(double)(1024*1024));
         System.out.println((double)totalMemory/(double)(1024*1024));
         System.out.println("Used Memory : "+(double)(totalMemory-freeMemory)/(double)(1024*1024));
+
+        TestClass instance = new TestClass();
+        instance = null;
+        System.gc();
+
+        instance = new TestClass();
+        instance = null;
+        System.runFinalization();
+
     }
 }
