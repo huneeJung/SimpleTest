@@ -1,6 +1,4 @@
-import java.util.logging.Logger;
-
-public class MemoryAreaTest {
+public class LiteralTest {
     public static void main(String[] args) {
 
         // 스택 영역 메모리 자체에 값을 할당
