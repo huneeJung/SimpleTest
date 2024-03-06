@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class AnnotationTest {
+
     public static void main(String[] args) throws Exception{
         try {
             Animal cat = createInstance(Cat.class, "고양이", "2024-01-22");
@@ -46,7 +47,6 @@ public class AnnotationTest {
             System.out.println(e.getMessage());
         }
     }
-
     private static <T extends Animal, W, V> T createInstance(Class<T> clazz, W param1, V param2) throws Exception {
             T instance = clazz.getConstructor(String.class,String.class).newInstance(param1, param2);
             Arrays.stream(instance.getClass().getDeclaredFields())
